@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<!-- home wrapper -->
+	<header id="home">
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('./static/img/background1.jpg');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Nav -->
+		<nav id="nav" class="navbar nav-transparent">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+							<img class="logo" src="/static/img/logo.png" alt="logo">
+							<img class="logo-alt" src="/static/img/logo-alt.png" alt="logo">
+					</div>
+					<!-- /Logo -->
+
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
+
+				<!--  Main navigation  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="#home">Login</a></li>
+				</ul>
+				<!-- /Main navigation -->
+
+			</div>
+		</nav>
+		<!-- /Nav -->
+<div class="home-wrapper">
+    <div class="container">
+        <div class="row">
+
+            <!-- home content -->
+            <div class="col-md-10 col-md-offset-1">
+                <div class="home-content">
+                	<h5>{{msg}}</h5>
+                   <form action="/admin_login" method="POST">
+                       User:<input type="text" name="user"/><br>
+                       Password:<input type="password" name="passwd"/>
+                        <input type="submit" value="Login"/>
+                    </form>
+                </div>
+            </div>
+            <!-- /home content -->
+
+        </div>
+    </div>
+</div>
+    </header>
+<!-- /home wrapper -->
+
+{% endblock %}

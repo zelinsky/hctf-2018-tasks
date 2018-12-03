@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  xinetd:
+    build: ./checker/
+    ports:
+        - "4321:4321"

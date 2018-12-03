@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Profile Settings</h1>
+<strong>For user {{ user.name }}</strong>
+<ul>
+    {% for tag in tags %}
+        {{ tag }}
+    {% endfor %}
+</ul>
+<form method="post">
+    <table>
+        <tr>
+            <td>Change Password:</td>
+            <td><input name="password" type="password" value="Password"/></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" class="input" value="Save" />
+            </td>
+        </tr>
+    </table>
+</form>
+<strong>{{ msg }}</strong>
+{% endblock %}

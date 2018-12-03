@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Transactions of {{ user.name }}</h1>
+<strong>
+    {% for tag in tags %}
+        #{{ tag }}
+    {% endfor %}
+</strong>
+
+Balance: {{ balance }}
+
+{% if transactions %}
+<ul class="list">
+    {% for t in transactions %}
+    <li><a>{{t.from}} -> {{t.to}} [{{t.amount}} PWN Coins]</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<br/>
+<strong>No Transactions yet!</strong>
+{% endif %}
+{% endblock %}

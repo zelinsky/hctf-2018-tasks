@@ -1,0 +1,15 @@
+service luckynumber
+{
+# Our service is not in /etc/hosts
+    type         = UNLISTED
+    protocol     = tcp
+    socket_type  = stream
+    port         = 4455
+    server       = /usr/sbin/chroot
+    server_args  = --userspec=1000:1001 /var/jail/luckynumber/ /usr/bin/python2.7 main.py
+    user         = root
+    wait         = no
+# HOME var HAS to be set, otherwise python won't start!
+    env = HOME=/ 
+}
+

@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  seccomp:
+    build: ./container/
+    ports:
+        - "13376:4422"
+

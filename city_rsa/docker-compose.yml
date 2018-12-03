@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  xinetd:
+    build: ./container/
+    ports:
+        - "4422:4422"
+        - "31337:31337"

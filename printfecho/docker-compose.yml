@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  printfecho:
+    build: ./container/
+    ports:
+        - "13374:4422"

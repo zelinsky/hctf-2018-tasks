@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Letter of Notice
+% LaTeX Template
+% Version 1.1 (21/11/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rashadul Islam (ross08@gmail.com) with modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{letter} % 11pt default font size, other options: 12pt and 10pt
+
+\usepackage[a4paper, top=2cm]{geometry} % Use A4 paper size
+
+\usepackage{color} % Required for color customization
+\usepackage[utf8]{inputenc}
+\usepackage{fouriernc} % Use the New Century Schoolbook font, comment this line to use the default LaTeX font or replace it with another
+
+\definecolor{Navy}{RGB}{50,90,122} % Define a custom color for the heading box
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	DATE AND FROM ADDRESS
+%----------------------------------------------------------------------------------------
+
+% \date{\vspace{1.5cm}\begin{flushleft}\today\end{flushleft}} % Use todays date and left-align it
+
+\begin{letter}{\large \bfseries $NAME$ \\ via the FOI website} % From address or department
+
+%----------------------------------------------------------------------------------------
+%	HEADING BOX
+%----------------------------------------------------------------------------------------
+
+\colorbox{Navy}{ % Creates a highlight behind the text using the previously-defined navy color
+
+\parbox[t]{\linewidth}{ % Creates a box to take up the entire line width
+
+\vspace*{14pt} % Whitespace above the text
+
+\hfill \color{white} \textsc{\huge freedom of information request} % Right-aligned heading text
+
+\vspace*{14pt} % Whitespace below the text
+}}
+
+%----------------------------------------------------------------------------------------
+%	SIGNATURE
+%----------------------------------------------------------------------------------------
+
+\signature{
+John Smith \\ % Your name
+\textbf{FOI Manager} \\ % Job title
+}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\opening{Dear $NAME$,}
+
+regarding your Freedom of Information request titled ``$TITLE$'' we collected the following information:
+
+$INFO$
+
+\closing{Sincerely,}
+
+%----------------------------------------------------------------------------------------
+
+\end{letter}
+
+\end{document}

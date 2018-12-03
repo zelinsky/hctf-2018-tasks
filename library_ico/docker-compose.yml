@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  db:
+    build: ./mysql
+    environment:
+            - MYSQL_RANDOM_ROOT_PASSWORD=1
+  web:
+    build: ./php
+    ports:
+      - "3333:80"
+    depends_on:
+      - db

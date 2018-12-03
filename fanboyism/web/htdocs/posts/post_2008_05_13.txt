@@ -1,0 +1,6 @@
+WTF?
+
+It seems like someone was able to access my server via SSH!
+
+This is impossible, especially since I changed my SSH port from default to
+port 2222 and my user to jan0sh... WHO COULD HAVE FIGURED THAT OUT?????

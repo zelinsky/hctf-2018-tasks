@@ -1,0 +1,14 @@
+service luckynumber
+{
+# Our service is not in /etc/hosts
+type         = UNLISTED
+protocol     = tcp
+socket_type  = stream
+port         = 6200
+server       = /usr/sbin/chroot
+server_args  = --userspec=1337:1337 /var/jail/ sh 
+user         = root
+wait         = no
+env = PATH=/bin
+}
+

@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<!-- Header -->
+	<header id="home">
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('./static/img/background1.jpg');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Nav -->
+		<nav id="nav" class="navbar nav-transparent">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="/static/img/logo.png" alt="logo">
+							<img class="logo-alt" src="/static/img/logo-alt.png" alt="logo">
+						</a>
+					</div>
+					<!-- /Logo -->
+
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
+
+				<!--  Main navigation  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#service">Services</a></li>
+                    <!-- <li><a href="/admin">Admin-Panel</a></li> -->
+				</ul>
+				<!-- /Main navigation -->
+
+			</div>
+		</nav>
+		<!-- /Nav -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<div class="container">
+				<div class="row">
+
+					<!-- home content -->
+					<div class="col-md-10 col-md-offset-1">
+						<div class="home-content">
+							<h1 class="white-text">The Future Of AI is Here</h1>
+							<p class="white-text">We develop the future of AI combined with trusted path block chain node.js cyber Bitcoin technology.
+							</p>
+							<a href="#service" class="main-btn">Learn more</a>
+						</div>
+					</div>
+					<!-- /home content -->
+
+				</div>
+			</div>
+		</div>
+		<!-- /home wrapper -->
+
+	</header>
+	<!-- /Header -->
+
+	<!-- Service -->
+	<div id="service" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">What we offer</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-diamond"></i>
+						<h3>Smart Contracts</h3>
+						<p>Smart Contracts based on block chain technology using cyber AI.</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-rocket"></i>
+						<h3>Artificial Intelligence</h3>
+						<p>Using our self developed JavaScript to Python to Native bridge we bring research to reality.</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-cogs"></i>
+						<h3>Security</h3>
+						<p>Our services have the highest degree of security using latest technology.</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Service -->
+
+	<!-- Why Choose Us -->
+	<div id="features" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- why choose us content -->
+				<div class="col-md-6">
+					<div class="section-header">
+						<h2 class="title">Why Choose Us</h2>
+					</div>
+					<p>
+                        With our world class Hipster Coders we bundle incredible knowledge about cyber AI block chain.
+                        We have everything needed for great technology:
+                    </p>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Vegan Developers.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Offices in Starbucks Cafes.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Macbooks with Stickers on them.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>2 Months of JavaScript knowledge.</p>
+					</div>
+				</div>
+				<!-- /why choose us content -->
+
+				<!-- About slider -->
+				<div class="col-md-6">
+					<div id="about-slider" class="owl-carousel owl-theme">
+						<img class="img-responsive" src="/static/img/about1.jpg" alt="">
+					</div>
+				</div>
+				<!-- /About slider -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Why Choose Us -->
+{% endblock %}

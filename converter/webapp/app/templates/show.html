@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Submit your Convert Job{% endblock %}
+Make sure these details are correct:
+{% block content %}
+    <table>
+        <tr>
+            <td>from:</td>
+            <td>
+                {{ data.f }}
+            </td>
+        </tr>
+        <tr>
+            <td>to:</td>
+            <td>
+                {{ data.t }}
+            </td>
+        </tr>
+    </table>
+    Content: <textarea cols="50" rows="20" readonly>{{ data.c }}</textarea><br />
+    <h3><a href="/convert">Convert Now!</a></>
+{% endblock %}

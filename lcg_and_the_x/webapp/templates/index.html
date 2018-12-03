@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Fan webiste</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" lang="en" content="LCG and the X fanclub">
+		<meta name="robots" content="index, follow">
+
+		<link rel="stylesheet" href="/static/css/styles.css">
+    </head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1 class="header-heading">LCG and the X</h1>
+			</div>
+            <div class="nav-bar">
+                        <ul class="nav">
+                            <li><a href="/">Home</a></li>
+                            {% if not session['user_id'] %}
+                            <li><a href="/login">Login</a></li>
+                            <li><a href="/signup">Signup</a></li>
+                            {% endif %}
+                            <li><a href="/news">News</a></li>
+                            <li><a href="/flags">Flags</a></li>
+                            {% if session['user_id'] %}
+                            <li><a href="/logout">Logout</a></li>
+                            {% endif %}
+                        </ul>
+            </div>
+			<div class="content">
+				<div class="main">
+
+                    <h1>{{title}}</h1>
+					<hr>
+                    {{content|safe}}
+				</div>
+			</div>
+			<div class="footer">
+				&copy; Copyright 2018
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Free Coins</h1>
+<strong>
+    ONLY TODAY!
+</strong>
+
+As a welcome gift, you can get 500 PWN Coins FOR FREE!
+
+{% if msg %}
+<strong>
+    {{msg}}
+</strong>
+{% else %}
+<strong>
+    <a href="free.php?do=1">KLICK HERE!</a>
+</strong>
+{% endif %}
+
+{% endblock %}

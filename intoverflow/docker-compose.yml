@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  intoverflow:
+    build: ./container/
+    ports:
+        - "13375:4422"

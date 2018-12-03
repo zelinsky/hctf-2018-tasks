@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  node:
+    build: ./node
+    ports:
+      - "4001:8888"
+  php:
+    build: ./php
+    ports:
+      - "4002:80"
+  python:
+    build: ./python
+    ports:
+      - "4003:8000"

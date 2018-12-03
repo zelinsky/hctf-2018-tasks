@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  slottiermachine:
+    build: ./container/
+    ports:
+        - "13371:4422"
+

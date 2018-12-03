@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  sandboxcompat2:
+    build: ./container/
+    ports:
+        - "13372:4422"
+

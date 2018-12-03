@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block body %}
+<div id="bodyPan">
+    <h2>Products</h2>
+    {% for p in products %}
+    <strong>{{ p.name }}</strong>
+    <p class="contant1">{{p.text}}</p>
+    <p class="more"><a href="buy.php?id={{p.pid}}">Buy for {{ p.price}} coins</a></p>
+    {% endfor %}
+</div>
+{% endblock %}

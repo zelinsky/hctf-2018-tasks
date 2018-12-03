@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Online Education</title>
+<link href="static/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="mainPan">
+  <div id="leftPan">
+    <ul class="one">
+      <li><a href="index.php" class="home">Home</a></li>
+        {% if user %}
+      <li><a href="ico.php">Get coins</a></li>
+      <li><a href="free.php">Free coins</a></li>
+      <li><a href="products.php">Products</a></li>
+      <li><a href="transactions.php">Transactions</a></li>
+      <li><a href="profile.php">Edit Profile</a></li>
+        {% else %}
+        <li><a href="register.php">Register</a></li>
+        {% endif %}
+    </ul>
+      <div id="secondformPan">
+          {% if user %}
+          <form action="logout.php" method="post" class="formtwo">
+              <h2>Logout</h2>
+              <input type="submit" class="input" value="LOGOUT" />
+          </form>
+          {% else %}
+          <form action="login.php" method="post" class="formtwo">
+              <h2>Login</h2>
+              <input name="name" type="text" value="Username"/>
+              <input name="password" type="password" value="Password"/>
+              <input type="submit" class="input" value="LOGIN" />
+          </form>
+          {% endif %}
+      </div>
+  </div>
+  <div id="rightPan">
+    <div id="topPan"> <a href="#"><img src="static/images/logo.gif" title="Online Education" alt="Online Education" width="213" height="30" border="0" class="logo"/></a>
+      <ul>
+        <li class="pen"><a href="#">pen</a></li>
+        <li class="book"><a href="#">book</a></li>
+        <li class="calculator"><a href="#">calculator</a></li>
+      </ul>
+      <p>secured via blockchain</p>
+    </div>
+    <div id="bodyPan">
+        {% block body %}
+        <h2>PWN Coin ICO</h2>
+        <p>
+            <strong>Wait!</strong> I know what you're thinking: "Yet another standard ICO". <strong>Wrong!</strong>
+        </p>
+        <p>
+            The PWN University's library team has created a new crypto currency from scratch, redefining how
+            <strong>blockchain</strong> can be used. We implemented an entirely new way of storing, managing and spending
+            crypto currencies.
+        </p>
+        <p>So, how does it work? Much like our biggest influence IOTA, PWN Coins are build on two principles:</p>
+        <h4>De-Decentralization</h4>
+        <p>
+            The main caveat of blockchain is the consensus, with complex algorithms that require
+            proofs of work. We narrowed the problem down to decentralization.
+            Therefore we implemented the <strong>first fully de-decentralized blockchain</strong>,
+            using a central trust to make fast decisions.
+        </p>
+        <h4>Using Keyless Cryptography</h4>
+        <p>
+            Since cryptography adds a lot of complexity to every implementation and is often the single point of
+            failure for a system we decided to use <strong>a keyless approach</strong>.
+            Implementing our own keyless crypto system proofed to be much more efficient than any other system.
+        </p>
+        <p class="more"><a href="#TODO">Whitepaper</a></p>
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footermainPan">
+  <div id="footerPan">
+    <ul>
+        <li><a href="index.php" class="home">Home</a>|</li>
+        {% if user %}
+        <li><a href="ico.php">Get coins</a>|</li>
+        <li><a href="free.php">Free coins</a>|</li>
+        <li><a href="products.php">Products</a>|</li>
+        <li><a href="transactions.php">Transactions</a>|</li>
+        <li><a href="profile.php">Edit Profile</a></li>
+        {% else %}
+        <li><a href="register.php">Register</a></li>
+        {% endif %}
+    </ul>
+    <p class="copyright">PWN Library. All rights reserved.</p>
+  </div>
+</div>
+</body>
+</html>

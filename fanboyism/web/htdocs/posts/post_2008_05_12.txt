@@ -1,0 +1,18 @@
+Hey folks,
+
+I am writing this post because I think a lot of people out there have never
+heard of my perfectly secure key storing system.
+
+You see, most people use a lot of different keys for different services...
+Why would you use different keys for HTTPS, GPG, SSH etc? It is difficult to
+manage all of these!
+
+My System works as follows:
+
+- Create an RSA key on a trustworthy computer (should be Debian)
+- Save the private and public key in all available formats
+- Copy the public key to the appropriate locations
+- Store the private key securely on an external flash drive in a safe
+
+Complexity is the enemy of security, that's why I think my system is
+bullet proof. More people should do it as I do.

@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  shell:
+    build: ./shell/
+    ports:
+        - "6200:6200"
+  ftp:
+    build: ./ftp
+    ports:
+      - "2121:21"
+    depends_on:
+      - shell

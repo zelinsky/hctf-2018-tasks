@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Buying</h1>
+
+
+{% if product %}
+<strong>
+    Thank you! Here is your donwload link: <a href="products/{{product.filename}}">Download</a>
+</strong>
+{% else %}
+<strong>
+    You don't have enough money!
+</strong>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>Janosh's Site</title>
+
+</head>
+
+<body>
+<h1>Janosh's site</h1>
+
+Hi, my name is Janosh and I am a PROgrammer.
+<br/>
+I exclusively work with Debian, all other distros (or even OSes) suck!
+<br/>
+You can find my blog posts <a href="/posts">here</a>.
+<br/>
+All posts also have a signature to make sure they're written by me!
+<br/>
+
+To verify a signature, <a href="/posts/pubkey.pem">download my public key</a> and do a:
+
+<pre>
+openssl base64 -d -in [blog post].txt.sig.b64 | openssl dgst -sha256 -verify pubkey.pem -signature /dev/stdin [blog post].txt
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block body %}
+    <h1>Register</h1>
+    <strong>{{ msg }}</strong>
+    <form method="post">
+        <table>
+            <tr>
+                <td>Username:</td>
+                <td><input name="name" type="text" value="Username"/></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input name="password" type="password" value="Password"/></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" class="input" value="Register" />
+                </td>
+            </tr>
+        </table>
+    </form>
+{% endblock %}

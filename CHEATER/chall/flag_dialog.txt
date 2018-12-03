@@ -1,0 +1,5 @@
+Alright. Thanks for downloading our secret tool.
+This might seem strange, but we want don't want anyone to find out...
+Our secret Hasselhof fanclub meets tuesdays at 9pm in the basement of building C.
+The door code is: flag{https://www.youtube.com/watch?v=PJQVlVHsFF8#What_are_safe_primes_LOL}
+See you then

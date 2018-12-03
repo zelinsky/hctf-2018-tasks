@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  ssh:
+    build: ./ssh/
+    ports:
+        - "2222:22"
+  web:
+    build: ./web/
+    ports:
+      - "8888:80"
+    depends_on:
+      - ssh
